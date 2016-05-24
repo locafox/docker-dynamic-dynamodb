@@ -37,7 +37,7 @@ Python sources come from https://github.com/sebdah/dynamic-dynamodb
 
   b. Mount your config file:
      ~~~bash
-     $ docker run -d --restart=on-failure:10 -v "my-config-file.conf:/etc/dynamic-dynamodb/dynamic-dynamodb.conf" --name dynamic-dynamodb dynamic-dynamodb nodryrun
+     $ docker run -d --restart=on-failure:10 -v "${PWD}/my-config-file.conf:/etc/dynamic-dynamodb/dynamic-dynamodb.conf" --name dynamic-dynamodb dynamic-dynamodb nodryrun
      ~~~
 
 2. Check the logs
